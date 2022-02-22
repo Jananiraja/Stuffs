@@ -1,3 +1,4 @@
+@Test01
 Feature: Bank Account
   In order to do save money
   As a responsible adult

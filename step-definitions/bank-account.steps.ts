@@ -13,6 +13,7 @@ export class BankAccountSteps {
   @when(/\$(\d*) is deposited/)
   public deposit(amount: number) {
     this.accountBalance = Number(this.accountBalance) + Number(amount);
+    console.log("Amount Deposited: " + this.accountBalance)
   }
 
   @then(/The bank account balance should be \$(\d*)/)
