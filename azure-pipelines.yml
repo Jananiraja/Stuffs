@@ -11,12 +11,15 @@ name: Local
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '16.13.2'
-    checkLatest: false
+    versionSpec: '10.x'
 
 - script: |
-    set NODE_TLS_REJECT_UNAUTHORIZED=0
-    npm config set strict-ssl=false
     npm install
     npm run build
+    npm test
   displayName: 'npm install and build'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
