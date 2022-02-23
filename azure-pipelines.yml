@@ -14,6 +14,7 @@ steps:
     versionSpec: '10.x'
 
 - script: |
+    set NODE_TLS_REJECT_UNAUTHORIZED=0
     npm config set strict-ssl=false
     npm install
     npm run build
