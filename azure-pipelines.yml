@@ -6,16 +6,17 @@
 trigger:
 - master
 
-name: Local
+pool:
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
+    checkLatest: true
+    force32bit: true
 
 - script: |
-    npm config set registry="http://registry.npmjs.org/"
-    npm config set strict-ssl false
     npm install
     npm run build
     npm test
