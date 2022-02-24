@@ -11,8 +11,7 @@ name: Local
 steps:
 - script: |
     npm install
-    npm run build
-    npm test
+    npm run test
   displayName: 'npm install and build'
 
 - task: PublishBuildArtifacts@1
