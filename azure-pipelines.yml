@@ -15,7 +15,8 @@ steps:
     npm test
   displayName: 'npm install and build'
 
-- task: PublishTestResults@2
+- task: PublishBuildArtifacts@1
   inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/TEST-*.xml'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'Reports'
+    publishLocation: 'Container'
