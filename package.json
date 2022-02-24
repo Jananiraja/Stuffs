@@ -4,23 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cucumber": ".\\node_modules\\.bin\\cucumber-js --tags @Test01",
+    "cucumber": ".\\node_modules\\.bin\\cucumber-js --tags @Test001",
     "test": "npm run cucumber & .\\node_modules\\.bin\\ts-node"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@types/chai": "^4.2.12",
     "@types/cucumber": "^4.0.5",
     "chai": "^4.2.0",
     "cucumber": "^5.1.0",
     "cucumber-pretty": "^1.5.0",
     "cucumber-tsflow": "^3.2.0",
+    "cucumber-html-reporter": "5.2.0",
     "ts-node": "^8.10.2",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "jquery": "3.5.1",
+    "soft-assert": "^0.2.6",
+    "node-gyp": "^8.4.1",
+    "urllib": "^2.37.1"
   },
-  "dependencies": {
-    "js-yaml": "^4.1.0"
+  "devDependencies": {
+    "@playwright/test": "^1.12.2",
+    "@types/jquery": "^3.5.5",
+    "playwright": "^1.18.0"
   }
 }

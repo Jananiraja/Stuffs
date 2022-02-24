@@ -1,0 +1,23 @@
+{
+    "common":{
+        "Project":{
+            "TestProp":{
+                "Delaylevel_0":10,
+                "Delaylevel_1":700,
+                "Delaylevel_2":1400,
+                "Delaylevel_3":2400,
+                "Delaylevel_4":3800,
+                "TimeoutLevel_1":10000,
+                "TimeoutLevel_2":20000,
+                "TimeoutLevel_3":30000
+            },
+            "Devices":{
+                "Device":"laptop"
+            },
+            "BrowserProp":{
+                "Headless":"false",
+                "Browser":"Chromium"
+            }       
+        }
+}
+}
