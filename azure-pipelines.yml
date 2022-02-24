@@ -6,16 +6,9 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'windows-latest'
+name: Local
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-    checkLatest: true
-    force32bit: true
-
 - script: |
     npm install
     npm run build
