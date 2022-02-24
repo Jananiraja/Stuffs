@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cucumber": "C:\\Users\\JAYAARV\\Desktop\\Azure\\Stuffs\\node_modules\\.bin\\cucumber-js --tags @Test001",
-    "test": "npm run cucumber & C:\\Users\\JAYAARV\\Desktop\\Azure\\Stuffs\\\\node_modules\\.bin\\ts-node"
+    "cucumber": "C:\\agent\\_work\\2\\s\\node_modules\\.bin\\cucumber-js --tags @Test001",
+    "test": "npm run cucumber & C:\\agent\\_work\\2\\s\\node_modules\\.bin\\ts-node"
   },
   "keywords": [],
   "author": "",
