@@ -11,8 +11,11 @@ name: Local
 steps:
 - script: |
     npm install
-    echo  '$(System.DefaultWorkingDirectory)'
   displayName: 'npm install'
+
+- script: dir
+  workingDirectory: $(Agent.BuildDirectory)
+  displayName: List contents of a folder
 
 - script: 
     npm run test
