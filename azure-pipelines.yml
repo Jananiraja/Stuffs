@@ -13,8 +13,8 @@ steps:
     npm run test
   displayName: 'Run Cucumber Test'
 
-- task: PublishBuildArtifacts@1
+- task: PublishTestResults@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'Reports'
-    publishLocation: 'Container'
+    testRunner: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+
