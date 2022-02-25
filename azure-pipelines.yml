@@ -11,6 +11,7 @@ name: Local
 steps:
 - script: |
     npm install
+    echo  '$(System.DefaultWorkingDirectory)'
   displayName: 'npm install'
 
 - script: 
