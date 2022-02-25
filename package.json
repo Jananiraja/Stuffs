@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cucumber": ".\\node_modules\\.bin\\cucumber-js --tags @Test001",
-    "test": "npm run .\\node_modules\\.bin\\cucumber-js --tags @Test001 & .\\node_modules\\.bin\\ts-node"
+    "test": "npm run ./node_modules/.bin/cucumber-js --tags @Test001 & ./node_modules/.bin/ts-node"
   },
   "keywords": [],
   "author": "",
