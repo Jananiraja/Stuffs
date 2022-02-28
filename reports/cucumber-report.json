@@ -1,0 +1,114 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Search in Google",
+    "line": 2,
+    "id": "search-in-google",
+    "tags": [
+      {
+        "name": "@Test001",
+        "line": 1
+      }
+    ],
+    "uri": "features\\GoogleSearch.feature",
+    "elements": [
+      {
+        "id": "search-in-google;google-search",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Google Search",
+        "tags": [
+          {
+            "name": "@Test001",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\cucumber-tsflow\\src\\binding-decorator.ts:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src\\hooks\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to google url",
+            "match": {
+              "location": "src\\steps\\GoogleSearch.ts:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6108000000,
+              "error_message": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://www.shopping.com/\", waiting until \"load\"\n============================================================\n    at World.<anonymous> (C:\\Users\\JAYAARV\\Desktop\\Azure\\Stuffs\\src\\steps\\GoogleSearch.ts:18:20)\n    at fulfilled (C:\\Users\\JAYAARV\\Desktop\\Azure\\Stuffs\\src\\steps\\GoogleSearch.ts:24:58)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I land onto google page",
+            "match": {
+              "location": "src\\steps\\GoogleSearch.ts:22"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I search in google",
+            "match": {
+              "location": "src\\steps\\GoogleSearch.ts:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src\\hooks\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\cucumber-tsflow\\src\\binding-decorator.ts:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
