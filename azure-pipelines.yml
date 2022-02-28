@@ -9,13 +9,13 @@ trigger:
 name: Local
 
 steps:
+- script: dir
+  workingDirectory: $(Pipeline.Workspace) 
+  displayName: List contents of a folder
+
 - script: |
     npm install
   displayName: 'npm install'
-
-- script: dir
-  workingDirectory: $(Agent.BuildDirectory)
-  displayName: List contents of a folder
 
 - script: 
     npm run test
