@@ -6,7 +6,10 @@
 trigger:
 - master
 
-name: Local
+pool:
+  vmImage: 'ubuntu-20.04'
+
+container: mcr.microsoft.com/playwright:focal
 
 steps:
 - script: dir
