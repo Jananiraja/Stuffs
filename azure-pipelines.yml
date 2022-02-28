@@ -21,8 +21,4 @@ steps:
     npm run test
   displayName: 'Run Cucumber Test'
 
-- task: PublishTestResults@1
-  inputs:
-    testRunner: 'JUnit'
-    testResultsFiles: '**/TEST-*.xml'
 
