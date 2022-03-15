@@ -9,8 +9,6 @@ trigger:
 pool:
   name: Self
 
-container: mcr.microsoft.com/playwright:focal
-
 steps:
 - script: dir
   workingDirectory: $(Pipeline.Workspace) 
