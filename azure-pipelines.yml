@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name:Self
+  name: Self
 
 steps:
 - script: dir
