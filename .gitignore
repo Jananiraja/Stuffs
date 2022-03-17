@@ -3,3 +3,6 @@
 **/*.d.ts
 node_modules
 package-lock.json
+reports/*.html
+reports/backup/*.html
+cucumber-report.json

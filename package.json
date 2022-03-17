@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cucumber": ".\\node_modules\\.bin\\cucumber-js --tags @Test001",
-    "test": "npm run cucumber & .\\node_modules\\.bin\\ts-node"
+    "test": "npm run cucumber & .\\node_modules\\.bin\\ts-node src/reporter/reporter.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "cucumber": "^5.1.0",
     "cucumber-pretty": "^1.5.0",
     "cucumber-tsflow": "^3.2.0",
+    "dotenv": "^8.2.0",
     "cucumber-html-reporter": "5.2.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7",
