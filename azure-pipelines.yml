@@ -13,6 +13,11 @@ steps:
 - script: dir
   workingDirectory: $(Pipeline.Workspace) 
   displayName: List contents of a folder
+  
+- script: 
+    npm config set registry https://registry.npmjs.org/
+    npm config set strict-ssl false
+  displayName: 'npm set registry and proxy'
 
 - script: |
     npm install
